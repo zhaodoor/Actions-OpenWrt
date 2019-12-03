@@ -10,13 +10,15 @@ name: openwrt_acrh17_with_docker
 on:
   #  release:
   #    types: [published]
-  #  push:
-  #    branches:
-  #      - master
+  push:
+    branches:
+      - master
+    paths:
+      - "acrh17_with_docker.config"
   #  schedule:
   #    - cron: 0 20 * * *
-  watch:
-    types: [started]
+  #  watch:
+  #  types: [started]
 
 jobs:
   build:
