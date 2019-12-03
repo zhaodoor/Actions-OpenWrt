@@ -67,7 +67,11 @@ jobs:
 
     - name: Load custom configuration
       env:
+<<<<<<< HEAD:.github/workflows/openwrt_acrh17.yml
         CONFIG_FILE: 'acrh17.config'
+=======
+        CONFIG_FILE: '.config'
+>>>>>>> upstream/master:.github/workflows/build-openwrt.yml
       run: |
         [ -e files ] && mv files openwrt/files
         [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
