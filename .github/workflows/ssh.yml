@@ -9,5 +9,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: tips
+        run: |
+          echo "touch /tmp/keepalive"
+          echo "https://tmate.io/t/"
+          
       - name: Setup Debug Session
         uses: csexton/debugger-action@master
+        
+
