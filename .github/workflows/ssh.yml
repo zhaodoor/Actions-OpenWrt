@@ -15,10 +15,9 @@ jobs:
       - name: tips
         run: |
           echo "touch /tmp/keepalive"
-          echo "https://tmate.io/t/"
           echo "bash start.sh"
           
-      - name: Setup Debug Session
-        uses: csexton/debugger-action@master
+      - name: SSH connection to Actions
+        uses: P3TERX/debugger-action@master
         
 
