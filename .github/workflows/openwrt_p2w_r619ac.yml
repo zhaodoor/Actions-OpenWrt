@@ -5,20 +5,20 @@
 # Blog: https://p3terx.com
 #=================================================
 
-name: openwrt_acrh17
+name: openwrt_p2w_r619ac
 
 on:
-  #  release:
-  #    types: [published]
   push:
     branches:
       - master
     paths:
       - "p2w_r619ac.config"
-  #  schedule:
-  #    - cron: 0 20 * * *
-  #watch:
-  #  types: [started]
+#  release:
+#    types: [published]
+#  schedule:
+#    - cron: 0 20 * * *
+#  watch:
+#    types: [started]
 
 jobs:
   build:
