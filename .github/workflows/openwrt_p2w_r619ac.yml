@@ -56,7 +56,7 @@ jobs:
 
       - name: Load custom configuration
         env:
-          CONFIG_FILE: "acrh17.config"
+          CONFIG_FILE: "p2w_r619ac.config"
           DIY_SH: "diy.sh"
         run: |
             [ -e files ] && mv files openwrt/files
