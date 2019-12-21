@@ -58,7 +58,7 @@ jobs:
         env:
           CONFIG_FILE: "acrh17.config"
           DIY_SH: "diy.sh"
-          run: |
+        run: |
             [ -e files ] && mv files openwrt/files
             [ -e $CONFIG_FILE ] && mv $CONFIG_FILE openwrt/.config
             chmod +x $DIY_SH
